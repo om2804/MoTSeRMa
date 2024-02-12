@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 502
 
-ENTRYPOINT ["npm", "MoTSeRMa.js"]
+ENTRYPOINT ["node", "MoTSeRMa.js"]
