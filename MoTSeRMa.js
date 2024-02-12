@@ -1,8 +1,10 @@
 var TCPServer = require('./tcpServer');
 var RTUMaster = require('./rtuMaster');
 
+var PORT = process.env.PORT || '/dev/ttyUSB0'
+
 var rtuMaster = new RTUMaster({
-    portName:'COM1',
+    portName: PORT,
     portSetup:{
         baudrate: 9600
     }}, function(){
